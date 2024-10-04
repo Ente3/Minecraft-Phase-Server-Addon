@@ -1,0 +1,26 @@
+name: MPSA
+version: '1.0-SNAPSHOT'
+main: de.ente.mpsa.MPSA
+api-version: '1.21'
+author: 'Ente_3'
+commands:
+  home:
+    description: "/home command um dich zu dein Home zu teleportieren"
+  sethome:
+    description: "Setze ein Home"
+  delhome:
+    description: "Lösche ein Home"
+  homes:
+    description: "Zeige alle Homes an"
+  warp:
+    description: "/home command um dich zu dein Warp zu teleportieren"
+  setwarp:
+    description: "Setze ein Warp"
+  delwarp:
+    description: "Lösche ein Warp"
+  warps:
+    description: "Zeige alle Warps an"
+  tpa:
+    description: "Sende eine TPA-Anfrage an einen anderen Spieler"
+  tpaaccept:
+    description: "Akzeptiere eine TPA-Anfrage"
