@@ -5,7 +5,8 @@ Minecraft Phase Server Addon is a plugin for Spigot and Paper (version 1.21.1) t
 
     Warps: Set warp points to allow players to quickly teleport to specific locations.
     Homes: Allow players to set personal home points for easy teleportation back to their base.
-    Backpack: Provides players with additional inventory space through a portable backpack.
+    TPA: Teleport to your friends
+    Backpack: Provides players with additional inventory space through a portable backpack. (soon)
     More useful addons and features coming in future updates!
 
 ### Installation
@@ -23,14 +24,52 @@ Example Configuration (config.yml):
 yaml
 
 ```
+settings:
+  enableDebugMode: false
+  enablePermissions: true
 warps:
-  maxWarpsPerPlayer: 5  # Maximum number of warps a player can set
-
+  enable: true
+  maxWarpsPerPlayer: 5
 homes:
-  maxHomesPerPlayer: 3  # Maximum number of homes a player can have
-
+  enable: true
+  maxHomesPerPlayer: 5
 backpack:
-  size: 36  # Backpack size (number of inventory slots)
+  enable: true
+  size: 27
+tpa:
+  enable: true
+messages:
+  general:
+    Prefix: "§cDu hast keine Rechte dafür."
+    noPermission: "§cDu hast keine Rechte dafür."
+    onlyByPlayer: "§cDieser Befehl kann nur von einem Spieler ausgeführt werden."
+    addonDisabled: "§cDieses Addon wurde deaktiviert."
+  homes:
+    yourHomes: "§7Das sind deine Homes:"
+    toManyHomes: "§7Du kannst keine weiteren Homes anlegen."
+    homeAlreadyExists: "§7Dieser Home Existiert schon."
+    homeAreDisabled: "§7Homes sind deaktiviert."
+    homeNotExists: "§7Dieser Home Existiert nicht."
+    teleportToHome: "§7Du hast dich Teleportiert."
+    newHomeCreated: "§7Du hast dir ein neuen Home erstellt"
+  warps:
+    warps: "§7Das sind alle Warps:"
+    toManyWarps: "§7Du kannst keine weiteren Warps anlegen."
+    warpAlreadyExists: "§7Dieser Warp Existiert schon."
+    warpsAreDisabled: "§7Warps sind deaktiviert."
+    warpNotExists: "§7Dieser Warp Existiert nicht."
+    teleportToWarp: "§7Du hast dich Teleportiert."
+    newWarpCreated: "§7Du hast dir ein neuen Warp erstellt"
+  tpa:
+    playerNotFound: "§7Spieler nicht gefunden."
+    cantTpToYourself: "§7Du kannst dich nicht zu dir selbst teleportieren."
+    tpaRequest: "§7%player% möchte sich zu dir teleportieren. "
+    tpaRequestAccept: "§7[§aAkzeptieren§7]"
+    sendRequest: "§7Anfrage an %player% gesendet."
+    noOpenRequests: "§7Es gibt keine ausstehende TPA-Anfrage."
+    playerNotOnline: "Der Spieler, der die Anfrage gesendet hat, ist nicht mehr online."
+    teleportTarget: "Du wurdest zu %player% teleportiert."
+    teleportCommandUser: "Du hast die Teleportanfrage von %player% angenommen."
 ```
 
 Commands
@@ -41,6 +80,8 @@ Commands
     /sethome <name> – Sets a home point with the specified name.
     /home <name> – Teleports you to your home point.
     /delhome <name> – Deletes a home point.
+    /tpa <name> - Teleport Request
+    /tpaaccept - Accept Teleport
     /backpack – Opens your backpack.
 
 Permissions
@@ -53,6 +94,7 @@ To manage access to specific commands, you can use a permissions management plug
     phase.home.use – Allows the use of the /home command.
     phase.home.set – Allows players to set home points using /sethome.
     phase.home.delete – Allows the deletion of home points with /delhome.
+    phase.tpa.use - TPA reuests and accpet those
     phase.backpack.use – Allows players to use the backpack.
 
 Requirements
@@ -64,7 +106,6 @@ Planned Features
 
     Additional backpack customization (e.g., expandable sizes, upgrades).
     Warp categories or groups for better organization.
-    Support for homes in specific worlds or dimensions.
 
 Contributors
 
