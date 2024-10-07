@@ -26,6 +26,11 @@ public class ConfigManager {
     private static String addonDisabled;
 
     @Getter
+    private static String backpackInvTitle;
+    @Getter
+    private static String backpackIsInUse;
+
+    @Getter
     private static String yourHomes;
     @Getter
     private static String toManyHomes;
@@ -101,6 +106,9 @@ public class ConfigManager {
             noPermission = MPSA.getPlugin().getConfig().getString("messages.general.noPermission");
             onlyByPlayer = MPSA.getPlugin().getConfig().getString("messages.general.onlyByPlayer");
             addonDisabled = MPSA.getPlugin().getConfig().getString("messages.general.addonDisabled");
+
+            backpackInvTitle = MPSA.getPlugin().getConfig().getString("messages.backpack.backpackInvTitle");
+            backpackIsInUse = MPSA.getPlugin().getConfig().getString("messages.backpack.backpackIsInUse");
 
             yourHomes = MPSA.getPlugin().getConfig().getString("messages.homes.yourHomes");
             toManyHomes = MPSA.getPlugin().getConfig().getString("messages.homes.toManyHomes");
