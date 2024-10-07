@@ -66,6 +66,8 @@ public class WarpsManager {
 
         removeLocationIDToConfig(warpName);
         removeLocationFromConfig(warpName);
+
+        player.sendMessage(MPSA.getPrefix() + ConfigManager.getWarpDeleted());
     }
 
 

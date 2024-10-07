@@ -69,6 +69,8 @@ public class HomesManager {
 
         removeLocationIDToConfig(homeName, player.getUniqueId().toString());
         removeLocationFromConfig(player.getUniqueId().toString() + "." + homeName);
+
+        player.sendMessage(MPSA.getPrefix() + ConfigManager.getHomeDeleted());
     }
 
 

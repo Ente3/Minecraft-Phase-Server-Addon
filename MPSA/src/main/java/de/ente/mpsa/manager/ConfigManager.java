@@ -39,6 +39,8 @@ public class ConfigManager {
     private static String teleportToHome;
     @Getter
     private static String newHomeCreated;
+    @Getter
+    private static String homeDeleted;
 
     @Getter
     private static String warps;
@@ -54,6 +56,8 @@ public class ConfigManager {
     private static String teleportToWarp;
     @Getter
     private static String newWarpCreated;
+    @Getter
+    private static String warpDeleted;
 
     @Getter
     private static String playerNotFound;
@@ -105,6 +109,7 @@ public class ConfigManager {
             homeNotExists = MPSA.getPlugin().getConfig().getString("messages.homes.homeNotExists");
             teleportToHome = MPSA.getPlugin().getConfig().getString("messages.homes.teleportToHome");
             newHomeCreated = MPSA.getPlugin().getConfig().getString("messages.homes.newHomeCreated");
+            homeDeleted = MPSA.getPlugin().getConfig().getString("messages.homes.homeDeleted");
 
             warps = MPSA.getPlugin().getConfig().getString("messages.warps.warps");
             toManyWarps = MPSA.getPlugin().getConfig().getString("messages.warps.toManyWarps");
@@ -113,6 +118,7 @@ public class ConfigManager {
             warpNotExists = MPSA.getPlugin().getConfig().getString("messages.warps.warpNotExists");
             teleportToWarp = MPSA.getPlugin().getConfig().getString("messages.warps.teleportToWarp");
             newWarpCreated = MPSA.getPlugin().getConfig().getString("messages.warps.newWarpCreated");
+            warpDeleted = MPSA.getPlugin().getConfig().getString("messages.warps.warpDeleted");
 
             playerNotFound = MPSA.getPlugin().getConfig().getString("messages.tpa.playerNotFound");
             cantTpToYourself = MPSA.getPlugin().getConfig().getString("messages.tpa.cantTpToYourself");
