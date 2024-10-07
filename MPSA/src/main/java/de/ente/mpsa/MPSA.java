@@ -55,10 +55,10 @@ public final class MPSA extends JavaPlugin {
         this.getCommand("delhome").setExecutor(new DelteHomeCommand());
         this.getCommand("homes").setExecutor(new HomesCommand());
 
-        this.getCommand("warp").setExecutor(new HomeCommand());
-        this.getCommand("setwarp").setExecutor(new SetHomeCommand());
-        this.getCommand("delwarp").setExecutor(new DelteHomeCommand());
-        this.getCommand("warps").setExecutor(new HomesCommand());
+        this.getCommand("warp").setExecutor(new WarpCommand());
+        this.getCommand("setwarp").setExecutor(new SetWarpCommand());
+        this.getCommand("delwarp").setExecutor(new DelteWarpCommand());
+        this.getCommand("warps").setExecutor(new WarpsCommand());
 
         TpaCommand tpaCommand = new TpaCommand();
         this.getCommand("tpa").setExecutor(tpaCommand);
