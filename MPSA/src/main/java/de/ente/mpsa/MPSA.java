@@ -5,6 +5,7 @@ import com.google.gson.JsonParser;
 import de.ente.mpsa.commands.*;
 import de.ente.mpsa.manager.ConfigManager;
 import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -20,7 +21,7 @@ public final class MPSA extends JavaPlugin {
     @Getter
     public static Plugin plugin;
 
-    @Getter
+    @Getter @Setter
     public static String prefix = "§8[§9MPSA§8] §7";
 
     @Override

@@ -14,7 +14,7 @@ tpa:
   enable: true
 messages:
   general:
-    Prefix: "§cDu hast keine Rechte dafür."
+    Prefix: "§8[§9MPSA§8] §7"
     noPermission: "§cDu hast keine Rechte dafür."
     onlyByPlayer: "§cDieser Befehl kann nur von einem Spieler ausgeführt werden."
     addonDisabled: "§cDieses Addon wurde deaktiviert."

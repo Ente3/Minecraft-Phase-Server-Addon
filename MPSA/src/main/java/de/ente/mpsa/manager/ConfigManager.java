@@ -93,6 +93,7 @@ public class ConfigManager {
 
             isTpaEnabled = MPSA.getPlugin().getConfig().getBoolean("tpa.enable");
 
+            MPSA.setPrefix(MPSA.getPlugin().getConfig().getString("messages.general.Prefix"));
             noPermission = MPSA.getPlugin().getConfig().getString("messages.general.noPermission");
             onlyByPlayer = MPSA.getPlugin().getConfig().getString("messages.general.onlyByPlayer");
             addonDisabled = MPSA.getPlugin().getConfig().getString("messages.general.addonDisabled");
