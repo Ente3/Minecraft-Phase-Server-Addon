@@ -1,6 +1,6 @@
 
 # ⚠⚠ THIS REPO IS MOVED TO INCONNU. ⚠⚠
-# ⚠⚠ UPDATES AND FURTHER RELEASES CAN BE FOUND AND DOWNLOAD THERE: ⚠⚠
+# UPDATES AND FURTHER RELEASES CAN BE FOUND AND DOWNLOAD THERE:
 # https://github.com/Inconnu-Development/Minecraft-Phase-Server-Addon
 
 ## Minecraft Phase Server Addon
